@@ -8,8 +8,8 @@ public class Main {
 
     private void startScreen() {
         System.out.println();
-        System.out.println("Welcome to the World of Zuul!");
-        System.out.println("World of Zuul is a new, incredibly boring adventure game.");
+        System.out.println("Welcome to my game!");
+        System.out.println("A murder has happened");
         System.out.println("Type 'help' if you need help.");
         System.out.println();
         System.out.println("You are " + currentRoom.getDescription());
@@ -22,12 +22,11 @@ public class Main {
         System.out.println();
     }
 
-    public Main()
-    {
-        createrooms();
+    public Main() {
+        createRooms();
     }
 
-    private void createrooms() {
+    private void createRooms() {
         Room street, ally, car, policeStation, prison, park, garage, hallway, room, nightshop;
 
         street = new Room("The main street in front of the house");
